@@ -182,14 +182,14 @@
       "pluginVersion": "8.1.2",
       "targets": [
         {
-          "expr": "count_over_time({host=~\"$host\", job=\"syslog\"} [$__interval] |~ \"$free_form_filter\" |~ \"$filter\")",
+          "expr": "count_over_time({host=~\"$host\", job=\"syslog\"} [$__interval] |~ \"$free_form_filter\")",
           "legendFormat": "{{host}}",
           "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Counts By Host ($host) - \"$filter\" - \"$free_form_filter\" (Filtered)",
+      "title": "Counts By Host ($host) -  \"$free_form_filter\" (Filtered)",
       "transformations": [],
       "type": "stat"
     },
@@ -216,14 +216,14 @@
       "pluginVersion": "7.3.6",
       "targets": [
         {
-          "expr": "{job=\"syslog\", host=~\"$host\"} |~ \"$free_form_filter\" |~ \"$filter\"",
+          "expr": "{job=\"syslog\", host=~\"$host\"} |~ \"$free_form_filter\"",
           "legendFormat": "",
           "refId": "A"
         }
       ],
       "timeFrom": null,
       "timeShift": null,
-      "title": "Logs By Host - \"$filter\" - \"$free_form_filter\" (Filtered)",
+      "title": "Logs By Host - \"$free_form_filter\" (Filtered)",
       "type": "logs"
     }
   ],
