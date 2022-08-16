@@ -315,6 +315,16 @@
           },
           {
             "selected": false,
+            "text": "DROP",
+            "value": "DROP"
+          },
+          {
+            "selected": false,
+            "text": "REJECT",
+            "value": "REJECT"
+          },
+          {
+            "selected": false,
             "text": "DNS",
             "value": "DNS"
           },
