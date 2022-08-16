@@ -22,7 +22,9 @@ services:
     - ./config/grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
     - ./config/grafana/dashboards:/var/lib/grafana/dashboards:ro
   loki:
-    command: -config.file=/etc/loki/loki-config.yml
+    command: |
+      -config.file=/etc/loki/loki-config.yml
+      -config.expand-env=true
     container_name: loki
     image: grafana/loki:2.3.0
     networks:
